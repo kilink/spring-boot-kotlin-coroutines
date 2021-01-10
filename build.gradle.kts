@@ -1,6 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
+    id("java-library")
     kotlin("jvm") version "1.4.21"
     kotlin("kapt") version "1.4.21"
 
@@ -16,6 +17,7 @@ repositories {
 apply(plugin = "io.spring.dependency-management")
 
 dependencies {
+    kapt("org.springframework.boot:spring-boot-autoconfigure-processor")
     kapt("org.springframework.boot:spring-boot-configuration-processor")
 
     implementation("com.google.guava:guava:30.1-jre")
@@ -35,6 +37,14 @@ dependencies {
 
 kotlin {
     explicitApi()
+}
+
+tasks.bootJar {
+    enabled = false
+}
+
+tasks.jar {
+    enabled = true
 }
 
 tasks.test {
