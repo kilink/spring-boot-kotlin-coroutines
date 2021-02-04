@@ -7,7 +7,7 @@ plugins {
 
     id("org.jlleitschuh.gradle.ktlint") version "9.4.1"
 
-    id("org.springframework.boot") version "2.4.1"
+    id("org.springframework.boot") version "2.4.2"
 }
 
 repositories {
