@@ -5,7 +5,7 @@ plugins {
     kotlin("jvm") version "1.4.30"
     kotlin("kapt") version "1.4.30"
 
-    id("org.jlleitschuh.gradle.ktlint") version "9.4.1"
+    id("org.jlleitschuh.gradle.ktlint") version "10.0.0"
 
     id("org.springframework.boot") version "2.4.2"
 }
