@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id("java-library")
-    kotlin("jvm") version "1.4.30"
-    kotlin("kapt") version "1.4.30"
+    kotlin("jvm") version "1.4.32"
+    kotlin("kapt") version "1.4.32"
 
     id("org.jlleitschuh.gradle.ktlint") version "10.0.0"
 
